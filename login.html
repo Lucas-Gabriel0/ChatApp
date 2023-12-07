@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configuração da codificação de caracteres e dimensionamento responsivo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Login</title>
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="/chatt/client/style.css" />
+    <!-- Link para a biblioteca de ícones Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Wrapper para centralizar o conteúdo -->
+    <div class="wrapper">
+        <!-- Formulário de login -->
+        <form action="/chatt/server/login.php">
+            <!-- Título do formulário -->
+            <h1>Login</h1>
+
+            <!-- Campo de entrada para o nome de usuário -->
+            <div class="input-box">
+                <input name="email_login" id="email_login" type="text" placeholder="Username" required />
+                <i class='bx bxs-user'></i> <!-- Ícone de usuário -->
+            </div>
+
+            <!-- Campo de entrada para a senha -->
+            <div class="input-box">
+                <input name="senha_login" id="senha_login" type="password" placeholder="Password" required />
+                <i class='bx bxs-lock-alt' ></i> <!-- Ícone de cadeado -->
+            </div>
+
+            <!-- Opções "Remember me" e "Forgot password" -->
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <!-- Botão de login -->
+            <button type="submit" class="btn">Login</button>
+
+            <!-- Link para a página de registro -->
+            <div class="registe-link">
+                <p>Don't have an account?<a href="/chatt/client/cadastro.html">Register</a></p>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
